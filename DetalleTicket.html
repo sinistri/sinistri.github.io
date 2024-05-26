@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesPrueba.css">
+    <title>Formulario de Ticket</title>
+    </head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Ticket</h2>
+        <form action="/submit" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="id_ticket">ID Ticket:</label>
+                    <input type="text" id="id_ticket" name="id_ticket" required placeholder="traeria info de la DB">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="traeria info de la DB">
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria" required >
+                        <option value="HW">HW</option>
+                        <option value="SW">SW</option>
+                        <option value="RED">RED</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="id_usuario">ID Usuario:</label>
+                    <input type="text" id="id_usuario" name="id_usuario" required placeholder="traeria info de la DB">
+                </div>
+
+                <div class="form-group">
+                    <label for="horario">Horario:</label>
+                    <input type="text" id="horario" name="horario" required placeholder="traeria info de la DB">
+                </div>
+                 
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required aria-placeholder="abierto">
+                        <option value="abierto">Abierto</option>
+                        <option value="en_progreso">En Progreso</option>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="resuelto">Resuelto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="traeria info de la DB">
+                </div>
+
+                <div class="form-group">
+                    <label for="ubicacion">Ubicación:</label>
+                    <input type="text" id="ubicacion" name="ubicacion" required placeholder="traeria info de la DB">
+                </div>
+
+                <div class="form-group">
+                    <label for="tecnico">Técnico:</label>
+                    <select id="tecnico" name="tecnico" required>
+                        <option value="nicolas">Nicolás</option>
+                        <option value="steven">Steven</option>
+                        <option value="victor">Víctor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="traeria info de la DB">
+                </div>
+
+                
+
+
+
+                
+                
+
+            </div>
+            <div class="form-group-full">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required placeholder="traeria info de la DB"></textarea>
+            </div>
+            <button type="submit">Actualizar datos</button>
+            <div class="form-group-full">
+                <label for="notas">Notas:</label>
+                <textarea id="notas" name="notas" required placeholder="agregar notas"></textarea>
+            <button type="submit">Guardar Nota</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

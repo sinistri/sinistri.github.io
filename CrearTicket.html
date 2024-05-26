@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesGPT.css">
+
+    
+    <title>Crear Ticket</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+             
+            </ul>
+        </nav>
+    </header>
+    <section class="createTicket">
+        <div class="form-container">
+            <h2>Crear Ticket</h2>
+            
+            <form action="/submit" method="post">
+                <div class="grid-container">
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id" required placeholder="se completaria solo una vez logueado el user">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="se completaria solo una vez logueado el user">
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="se completaria solo una vez logueado el user">
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="se completaria solo una vez logueado el user">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="se completaria solo una vez logueado el user">
+
+                    <div class="form-group">
+                        <label for="ubicacion">Ubicación:</label>
+                        <select id="ubicacion" name="ubicacion" required>
+                            <option value="Remoto">Remoto</option>
+                            <option value="Sitio">Sitio</option>
+                        </select>
+                    </div>
+
+                    <label>Horario de contacto:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="horario1" name="horario_contacto[]" value="08-14">
+                        <label for="horario1">08 a 14</label>
+                        <input type="checkbox" id="horario2" name="horario_contacto[]" value="14-18">
+                        <label for="horario2">14 a 18</label>
+                        <input type="checkbox" id="horario3" name="horario_contacto[]" value="18-24">
+                        <label for="horario3">18 a 24</label>
+                    </div>
+
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" placeholder="Describir problema que lo afecta." name="descripcion" required></textarea>
+                    
+                    <div class="button-group">
+                        <button type="button" onclick="location.href='MenuUsuario.html'">Enviar</button>
+                        <button type="reset">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.whatsapp.com" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

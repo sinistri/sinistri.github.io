@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    }
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(./imagenes/INFORMATICA.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed; /* Para mantener el header fijo en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el header esté por encima de otros contenidos */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive header */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed; /* Para mantener el footer fijo en la parte inferior */
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el footer esté por encima de otros contenidos */
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive footer */
+@media (max-width: 600px) {
+    .social-media {
+        flex-direction: column;
+    }
+    
+    .social-media a {
+        margin: 5px 0;
+    }
+}
+
+.form-container h2~form  {
+    max-width: 1200px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(90, 243, 128, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* index */
+img {
+    align-items: end;
+    color: aquamarine;
+}
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #efffe4;
+    text-align: center;
+    padding: 5%;    
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+    color: 0 2px 4px rgba(90, 243, 243, 0.1);;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; 
+}
+
+label {
+    flex: auto / span 1;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    grid-column: 1 / span 2;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radio-group,
+.checkbox-group {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.button-group {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding-left: 10%;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+    color: black;
+}
+
+
+table {
+    margin-top: 0%;
+    width: 100%;
+    border-collapse: collapse;
+/*    margin: 20px 0; */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.container {
+    max-width: 1200px;
+ /*   margin: 0 auto; */
+    margin-top: 5ch;
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+/* FORMULARIO TICKET*/
+.form-group {
+    flex: 1 1 48%;
+    margin-bottom: 15px;
+}
+.form-group-full {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+}
+.form-group label,
+.form-group-full label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group select,
+.form-group-full textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group-full textarea {
+    resize: vertical;
+    height: 100px;
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-container button:hover {
+    background-color: #0056b3;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.col {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%;
+}
+
+.containerLog, .containerMenu {
+    display: flex;
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Centrar las imágenes verticalmente */
+    gap: 80px; /* Espacio entre las imágenes */
+    border-radius: 4px;
+    
+    
+}
+
+.log-image {
+    width: 300px; /* Ajusta este valor según el tamaño deseado */
+    height: 300px; /* Ajusta este valor según el tamaño deseado */
+    object-fit: cover; /* Para asegurarse de que la imagen cubra el área sin distorsionarse */
+    border: 5px solid rgb(25, 38, 95); /* Contorno blanco */
+    box-sizing: border-box; /* Incluye el borde dentro de las dimensiones de la imagen */
+    background-color: whitesmoke;
+}
+
+.containerLog h3 {
+    text-align: center;
+    color: rgb(250, 231, 231);
+    background-color: rgb(25, 38, 95) ;
+    
+    }
+
+.containerMenu h3 {
+     text-align: center;
+     color: rgb(250, 231, 231);
+     background-color: rgb(25, 38, 95) ;
+        
+    }
+
+
+@media (max-width: 400px) {
+    .grid-container {
+            grid-template-columns: 1fr;
+    }
+    .button-group {
+            flex-direction: column;
+            gap: 10px;
+    }
+    .containerLog {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .containerMenu {
+        flex-direction: column;
+        gap: 10px;
+    }
+ }

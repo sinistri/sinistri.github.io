@@ -158,6 +158,15 @@ button:hover {
     .form-group-full {
         grid-column: span 2;
     }
+    body {
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 120vh;
+     margin: 0;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -166,7 +175,7 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 140vh;
+        height: 160vh;
         margin: 0;
     }
 
